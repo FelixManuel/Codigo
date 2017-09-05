@@ -1,5 +1,6 @@
 package Main;
 
+import List.List;
 import Operators.Operators;
 
 /**
@@ -9,9 +10,13 @@ public class Main {
     
     public static void main(String args[]){
         Operators operators = new Operators();
+        List list = new List();
         
-        System.out.println(operators.recursiveAdd(5, 5));
-        System.out.println(operators.iterativeAdd(85763, 28395));
-        System.out.println(operators.recursiveSubtraction(5, 4));
+        int[] vector = {5,7,2,2,6,9,77,5,3,22,23};
+        int[] result = list.rotate(vector);
+        
+        for(int number:result){
+            System.out.print(number + " ");
+        }
     }
 }
